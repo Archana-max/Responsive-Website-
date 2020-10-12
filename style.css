@@ -1,0 +1,287 @@
+body{
+    font:15px/1.5 arial helvertica sansserif;
+    padding:0;
+    margin: 0;
+    background-color:#f4f4f4;
+    
+}
+
+/* Global */
+
+.container{
+    width:80%;
+    margin:auto;/* aligns in the center */
+    overflow: hidden;
+}
+
+ul {
+   margin:0;
+   padding:0 
+}
+
+.btn{
+    height:34px;
+    width:100px;
+    background-color:#7DCADA;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    color:#ffffff;
+    font-weight: 500;
+}
+
+h2,h3{
+    padding:0;
+    margin:0;
+}
+
+li{
+    list-style: none !important;
+}
+    
+/* Header */
+
+header{
+    background-color: #0C3C60;
+    min-height:70px;
+    color:#ffffff;
+    border-bottom:#7DCADA 3px solid;
+}
+
+header a {
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    
+    display: inline;
+    padding:0 20px 0 20px;
+    list-style: none;
+}
+
+header .branding{
+    float:left;
+}
+
+header nav{
+    float:right;
+    margin-top:30px;
+}
+
+header .highlight, header .current a {
+    color:#7DCADA;
+    font-weight:bold;
+}
+
+header a:hover{
+    font-weight: bold;
+    color:#7DCADA;
+}
+/* Showcase */
+
+#showcase{
+    background:url("./images/showcase.jpg") no-repeat 0px 0px;
+    min-height: 400px;
+    opacity:0.8;
+    text-align: center;
+}
+#showcase h1{
+    margin: 100px 0 20px 0;
+    font-size:40px;
+    color:#ffffff;
+}
+#showcase p{
+    color:#ffffff;
+    font-size: 20px;
+}
+#newsletter{
+    background-color:#0C3C60;
+    color:#ffffff;
+    
+}
+#newsletter h1{
+    float:left;
+    margin-top:25px;
+    margin-bottom: 30px;
+}
+/* Newsletter */
+#newsletter form{
+    float:right;
+    margin-top:25px;
+    margin-bottom: 25px;
+
+}
+
+#newsletter input[type='email']{
+    width:200px;
+    height:30px;
+    padding-left:10px;
+    font-size:15px;
+}
+/* Save Water */
+
+#saveWater{
+   margin-top:30px;
+   text-align: center;
+    
+}
+#saveWater .box{
+    width:30%;
+    float:left;
+    text-align: center;
+    padding: 15px;
+}
+
+#saveWater .box img{
+    float:left;
+    width:300px;
+    height: 200px;
+    padding:15px;
+}
+
+#saveWater h3,
+ #main h3{
+    font-size:20px;
+}
+#saveWater p{
+    font-size: 17px;
+}
+
+
+/* About us */
+/* main */
+#main{
+    margin:25px;
+    font-size: 16px;
+}
+
+#main .main-col{
+float:left;
+width:60%;
+
+}
+
+/* Side*/
+#main .sidebar{
+    width:30%;
+    float:right;
+}
+.dark{
+    padding:20px;
+    background-color:#7DCADA;
+    
+}
+
+/*services*/
+#main .services{
+    float:left;
+    width:60%;
+    }
+.btn1{
+        width:80px;
+        height: 30px;
+        font-size: 15px;
+        margin-top:15px;
+    }
+.services p{
+    font-size: 16px;
+}
+
+.services li{
+    border:1px solid #C0C0C0;
+    background-color:#D8D8D8;
+    padding:10px;
+    margin: 10px;
+}
+
+.dark{
+    margin-top:42px;
+}
+.sidebar .form {
+    font-size: 16px;
+}
+
+.sidebar .form input{
+    padding:5px;
+    width:90%;
+    
+}
+textarea{
+    padding:5px;
+    font:15px/1.5 arial helvertica sansserif;
+}
+
+footer{
+    font-size: 18px;
+    background-color:#0C3C60;
+    color:#ffffff;
+    min-height: 60px;
+    text-align: center;
+  
+}
+footer p{
+    padding:20px;
+    margin-bottom:0 !important;
+}
+
+/*Media Queries*/
+
+@media(max-width:768px){
+header .branding,
+header nav,
+header nav li,
+#showcase h1,
+#newsletter h1,
+#newsletter form,
+#saveWater .box,
+#main .main-col,
+#main .sidebar,
+#main .services{
+    float:none !important;
+    text-align: center !important;
+    width: 100% !important;
+    }
+header h1{
+        margin-bottom: 5px !important;
+    }
+header nav{
+    padding-bottom:20px;
+    margin-top:10px;
+    }
+#showcase h1{
+        margin-top:40px;
+        margin-bottom: 10px;
+    }
+    #showcase{
+        min-height:300px;
+    }
+    #newsletter h1{
+        margin-bottom: 10px;
+        margin-top: 15px;
+       }
+    #newsletter form{
+        margin-top:10px;
+    }
+    #newsletter input{
+        width:100% !important;
+        margin-bottom: 5px;
+    }
+
+    #newsletter button{
+        width:100%;
+
+    }
+    textarea{
+     width: 90%;
+    }
+    #saveWater .box img{
+      width:80%;
+      text-align: center ! important;
+      margin-right:50px;
+     
+    }
+    
+}
